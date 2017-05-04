@@ -1,0 +1,26 @@
+h1{
+ text-align: center;
+}
+
+.font{
+    display:inline;
+    font-size:2em;
+}
+table{
+    border-collapse: collapse;
+  }
+
+table,td, th{
+    border:2px solid black;
+    width: auto;
+    height: 80px;
+    text-align:center;
+    Padding-top:0px;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+   
+   }
+th{
+    background-color:darkturquoise;
+}

@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+li#b {
+    display: inline;
+      font-family:'Nanum Myeongjo';
+}
+
+li a {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 70px 50px;
+    text-decoration: none;
+
+}
+
+    li a:hover {
+        background-color: none;
+    }
+
+ul li:hover ul {
+    display: block;
+
+}
+
+ul li ul {
+    position: absolute;
+    width: 150px;
+    height:auto;
+    display: none;
+    background-color:#FAFAD2;
+}
+
+ ul li ul li {
+        background: white;
+        display: block;
+
+}
+ul li ul li a {
+            color: sandybrown;
+            display: block;
+
+}
+
+ul li ul li :hover {
+            background-color:lightslategray;
+            color: black;
+}
+.text{
+    text-align:center;
+    font-size:larger;
+    font-family:'Nanum Brush Script';
+}
+.zindex2{
+    width: 1380px;
+    height: 500px;
+    left:8px;
+    top:160px;
+    z-index: -1;
+    position:absolute;   
+}
+.back{
+     background-image:url("image.png");
+    background-size:100px 70px;
+    background-repeat:no-repeat;
+    background-position-x:center;
+
+}
+.text2{
+   font-size:large;
+   text-align:center;
+   background-color:#303030;
+   color:white;
+}
