@@ -58,7 +58,7 @@ ul li ul li :hover {
     font-family:'Nanum Brush Script';
 }
 .zindex2{
-    width: 100%;
+    width: auto;
     height: 500px;
     left:8px;
     top:160px;
