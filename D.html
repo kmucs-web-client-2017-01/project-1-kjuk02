@@ -5,7 +5,8 @@
     <title>돈부리</title>
     <link rel="stylesheet" href="navigationbar.css">
     <link rel="stylesheet" href="border.css">
-</head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+  </head>
 <body>
     <div id="header">
         <ul class="back">
@@ -32,25 +33,29 @@
             </li>
         </ul>
     </div>
+    <div class="text3">
     <h1>돈부리</h1>
-    <img src="D1.PNG" width="350em" height="400em" style="float:right;">
-    <img src="D2.PNG" width="350em" height="400em" style="float:right;">
+    <img id="image_D" src="D2.PNG" width="350em" height="400em" style="float:right;">
     <h2>1. 위치 및 소개</h2>
     <strong>위치:</strong>
-    <img src="D5.PNG" width="auto" height="200em" style="float:none;"><p></p>
+    <img src="D5.PNG" width="300px" height="300px" style="float:none;" onmouseover="over_D(this)" onmouseout="out_D(this)"><p></p>
     <p><strong>소개:</strong></p>
+    <div>
+        <button id="show">특징보기</button>
+        <button id="hide">안보기</button>
+    </div>
+    <div id="demo-1" class="box2" hidden="hidden">
     <ol>
         <li>저렴한 가격에 맛있는 덮밥을 즐길 수 있습니다.
         <li>홍대역 근처에 있어서 길을 찾기 쉽습니다.
         <li>밥을 무한리필로 해줍니다.
         <li>분위기는 일본식 덮밥집을 모티브로 하여 실제 일본 덮밥집에 있는 기분을 느끼게 해줍니다.
     </ol>
+    </div>
+    <br>
     <strong>전화번호:</strong> 02-3141-8398<p></p>
     <strong>영업시간:</strong> 매일 11:00~04:00
     <h2>2. 메뉴</h2>
-    <img src="D4.PNG" width="auto" height="246em" style="float:right">
-    <img src="D6.PNG" width="auto" height="246em" style="float:right">
-    <img src="D3.PNG" width="auto" height="246em" style="float:right">
     <table>
         <tr>
             <th>         </th>
@@ -58,36 +63,45 @@
         </tr>
         <tr>
             <th>이름</th>
-            <td>더블 가츠동</td>
-            <td>안심 가츠동</td>
-            <td>규동</td>
-            <td>에비후라이</td>
-            <td>가라아게</td>
+            <td class="f1">더블 가츠동</td>
+            <td class="f2">안심 가츠동</td>
+            <td class="f3">규동</td>
+            <td class="f4">에비후라이</td>
+            <td class="f5">가라아게</td>
         </tr>
         <tr>
             <th>가격</th>
-            <td>9,500\</td>
-            <td>7,500\</td>
-            <td>8,000\</td>
-            <td>4,000\</td>
-            <td>5,000\</td>
+            <td class="f1">9,500won</td>
+            <td class="f2">7,500won</td>
+            <td class="f3">8,000won</td>
+            <td class="f4">4,000won</td>
+            <td class="f5">5,000won</td>
         </tr>
-    </table>
-    <h2>3. 식당평가</h2>
-    돈부리는 마포구에서 제가 먹어본 첫번째 맛집입니다.~ 그만큼 소개하는 맛집중에 첫번째로할 정도로 메뉴들의 맛이나 가성비면도 충분하다고 자부할수있습니다.
-    <p>
-        한마디 평가:<strong> 홍대에서 가장 가성비있는 덮밥집</strong>
-        <h2>4. 평점</h2>
-        <a class="font">★★★★☆</a>
+    </table><br>
+    <div id="flip">어! 이게 뭐지?</div>
+    <div id="panel">
+      <h2 style="text-align:left">3. 식당평가</h2>
+       돈부리는 마포구에서 제가 먹어본 첫번째 맛집입니다.~ 그만큼 소개하는 맛집중에 첫번째로할 정도로 메뉴들의 맛이나 가성비면도 충분하다고 자부할수있습니다.
+      <p>
+          한마디 평가:<strong> 홍대에서 가장 가성비있는 덮밥집</strong></div>
+      <h2>4. 평점</h2>
+        <a class="font">
+          <div id="animate-demo"class="box">★★★★☆</div>
+          </a>
         <div style="position: fixed; bottom: 5px; right: 5px;">
             <a href="#header">
+                <span id="hw">
                 <img src="image3.PNG" style="height:30px;" title="위로 가기">
+              </span>
             </a>
         </div>
+    <br><br><br><br><br>
     <p class="text2">
         (주) FOOD PARTNER 대표이사 김현석 서울특별시 강서구 허준로 176 (가양동, 8단지) <br>전화 010-5292-7308
         E-mail : kjuk02@naver.com <br>사업자등록번호 2014-30-50 음식판매업 신고 제2014-국민소형-3050호 사업자정보확인<br>
         copyright (C) <span style="color:sandybrown;;">FP inc.</span> All rights reserved.
     </p>
+  </div>
+      <script type="text/javascript" src="input.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <title>혼카츠</title>
     <link rel="stylesheet" href="navigationbar.css">
     <link rel="stylesheet" href="border.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -32,13 +33,18 @@
             </li>
         </ul>
     </div>
+    <div class="text3">
     <h1>혼카츠</h1>
-    <img src="H2.PNG" width="350em" height="450em" style="float:right;">
-    <img src="H3.PNG" width="350em" height="450em" style="float:right;">
+    <img id="image_H" src="H3.PNG" width="350em" height="450em" style="float:right;">
     <h2>1. 위치 및 소개</h2>
     <strong>위치: </strong>
-    <img src="H1.PNG" width="300pxx" height="200em" style="float:none;"><p></p>
+    <img src="H1.PNG" width="300px" height="300px" style="float:none;" onmouseover="over_H(this)" onmouseout="out_H(this)"><p></p>
     <strong>소개: </strong> <p></p>
+    <div>
+        <button id="show">특징보기</button>
+        <button id="hide">안보기</button>
+    </div>
+    <div id="demo-1" class="box2" hidden="hidden">
     <ol>
         <li>홍대역 인근에 위치하여 찾아가기 편하고 삼대천왕에도 소개된적이 있습니다.</li>
         <li>대학가에 위치해서 대부분 가격이 저렴하게 구성되어 있습니다.</li>
@@ -47,13 +53,10 @@
         <li>돼지고기, 김치, 쌀, 닭고기 등 대다수의 식재료를 <strong>국내산</strong>만 사용합니다.</li>
         <li>회전율이 빨라 예약없이 찾아가도 금방 식사가 가능합니다.</li>
     </ol>
+    </div>
+    <br>
     <strong>전화번호: 02-322-8850</strong><p></p>
     <strong>영업시간: 11:00 - 22:30</strong>
-    <div style="position:absolute; top:816.5px; right:0px;">
-        <img src="H4.PNG" width="230px" height="249em" style="float:right">
-        <img src="H5.PNG" width="230px" height="249em" style="float:right">
-        <img src="H6.PNG" width="284px" height="249em" style="float:right">
-    </div>
     <h2>2. 메뉴</h2>
     <table>
         <tr>
@@ -65,47 +68,51 @@
         </tr>
         <tr>
             <th>이름</th>
-            <td>생등심 돈까스</td>
-            <td>생안심 돈까스</td>
-            <td>생선 까스</td>
-            <td>메밀 & 돈까스 set</td>
-            <td>매운 돈까스</td>
+            <td class="f1">생등심 돈까스</td>
+            <td class="f2">생안심 돈까스</td>
+            <td class="f3">생선 까스</td>
+            <td class="f4">메밀 & 돈까스 set</td>
             <th>이름</th>
-            <td>치즈 돈까스</td>
-            <td>나가사끼 라멘</td>
-            <td>버터갈릭감자튀김</td>
-        </tr>
+            <td class="f5">치즈 돈까스</td>
+            <td class="f6">나가사끼 라멘</td>
+          </tr>
         <tr>
             <th>가격</th>
-            <td>7,000\</td>
-            <td>7,000\</td>
-            <td>7,000\</td>
-            <td>7,000\</td>
-            <td>7,000\</td>
+            <td class="f1">7,000won</td>
+            <td class="f2">7,000won</td>
+            <td class="f3">7,000won</td>
+            <td class="f4">7,000won</td>
             <th>가격</th>
-            <td>9,000\</td>
-            <td>5,000\</td>
-            <td>5,000\</td>
-        </tr>
+            <td class="f5">9,000won</td>
+            <td class="f6">5,000won</td>
+      </tr>
     </table>
-    <br><br>
-    <h2>3. 식당평가</h2>
+    <br>
+    <div id="flip">어! 이게 뭐지?</div>
+    <div id="panel">
+      <h2 style="text-align:left">3. 식당평가</h2>
     혼카츠는 치즈돈까스가 유명한집중 하나입니다. 치즈돈까스를 주문하면 사진과 같이 치즈가 흐를 정도로 나오는게 이집의 장점입니다.<br>
     소스가 4종류나 되어 여러가지 소스맛을 경험할수있고 나가사끼 라멘을 함께 주문하면 돈까스로 느끼함을 느낄때쯤 매운맛으로 씻어줄수있습니다.<br>
-    대체적으로 가격대가 낮고 맛 또한 가격처럼 낮은게 아니기때문에 남녀노소 즐길수있습니다. 그리고 소스는 호불호가 갈려서 맛이없다고 느끼면 기본소스로 즐기시면됍니다.<p></p>
+    대체적으로 가격대가 낮고 맛 또한 가격처럼 낮은게 아니기때문에 남녀노소 즐길수있습니다. 그리고 소스는 호불호가 갈려서 맛이없다고 느끼면 기본소스로 즐기시면됩니다.<p></p>
     하지만 돈까스 자체는 일반 돈까스와 차별화된 맛을 느끼기는 힘듭니다.<p></p>
-    한마디 평가:<strong> cscading처럼 흐르는 치즈돈까스</strong>
+    한마디 평가:<strong> cscading처럼 흐르는 치즈돈까스</strong></div>
     <h2>4. 평점</h2>
-    <a class="font">★★☆☆☆</a>
+    <a class="font">
+      <div id="animate-demo"class="box">★★★★☆</div>
+    </a>
     <div style="position: fixed; bottom: 5px; right: 5px;">
         <a href="#header">
+          <span id="hw">
             <img src="image3.PNG" style="height:30px;" title="위로 가기">
+          </span>
         </a>
     </div>
+        <br><br><br><br><br>
 <p class="text2">
     (주) FOOD PARTNER 대표이사 김현석 서울특별시 강서구 허준로 176 (가양동, 8단지) <br>전화 010-5292-7308
     E-mail : kjuk02@naver.com <br>사업자등록번호 2014-30-50 음식판매업 신고 제2014-국민소형-3050호 사업자정보확인<br>
     copyright (C) <span style="color:sandybrown;;">FP inc.</span> All rights reserved.
 </p>
+<script type="text/javascript" src="input.js"></script>
 </body>
 </html>

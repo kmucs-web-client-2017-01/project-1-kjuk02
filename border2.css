@@ -4,7 +4,7 @@ h1{
 
 .font{
     display:inline;
-    font-size:2em;
+    font-size:3px;
 }
 table{
     border-collapse: collapse;
@@ -19,7 +19,7 @@ table,td, th{
     padding-bottom:0px;
     padding-left:20px;
     padding-right:20px;
-   
+
    }
 th{
     background-color:darkturquoise;

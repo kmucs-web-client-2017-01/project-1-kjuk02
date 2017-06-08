@@ -5,6 +5,7 @@
     <title>부탄츄</title>
     <link rel="stylesheet" href="navigationbar.css">
     <link rel="stylesheet" href="border.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -32,27 +33,31 @@
             </li>
         </ul>
     </div>
+    <div class="text3">
     <h1>부탄츄</h1>
-    <img src="B2.PNG" width="350em" height="450em" style="float:right;">
-    <img src="B3.PNG" width="350em" height="450em" style="float:right;">
+    <img id="image_B" src="B3.PNG" width="350em" height="450em" style="float:right;">
     <h2>1. 위치 및 소개</h2>
     <strong>위치: </strong>
-    <img src="B1.PNG" width="auto" height="200em" style="float:none;"><p></p>
+    <img src="B1.PNG" width="300px" height="300px" style="float:none;"onmouseover="over_B(this)" onmouseout="out_B(this)"><p></p>
     <strong>소개: </strong> <p></p>
+    <div>
+        <button id="show">특징보기</button>
+        <button id="hide">안보기</button>
+    </div>
+    <div id="demo-1" class="box2" hidden="hidden">
     <ol>
         <li>홍대역 인근에 있어 찾아가기 편합니다.
         <li>대학교 근처에 위치하여서 가격이 좋습니다.
         <li>본점이 일본 교토에 있는 만큼 일본식 라면을 먹고싶다면 가봐도 좋은곳입니다.
         <li>라멘의 면종류를 고를 수 있고 기호에 맞게 맛조절 또한 가능합니다.
         <li>소스, 마늘, 숙주, 파를 자기가 넣고 싶은 만큼 정하여 주문할수있습니다.</li>
-        <li>육수가 일본식 라면에 알맞게 무거운 맛을 갖고있습니다. ※ 무거움이 싫다면 만들때 미리 말하면 됍니다.</li>
+        <li>육수가 일본식 라면에 알맞게 무거운 맛을 갖고있습니다. ※ 무거움이 싫다면 만들때 미리 말하면 됩니다.</li>
     </ol>
+    </div>
+    <br>
     <strong>전화번호: 02-3144-3304</strong><p></p>
     <strong>영업시간: 11:30 - 23:00</strong>
     <div style="position:absolute; top:815px; right:0px;">
-        <img src="B4.PNG" width="275.5px" height="249em" style="float:right">
-        <img src="B5.PNG" width="280px" height="249em" style="float:right">
-        <img src="B6.PNG" width="290px" height="249em" style="float:right">
     </div>
     <h2>2. 메뉴</h2>
     <table>
@@ -62,36 +67,45 @@
         </tr>
         <tr>
             <th>이름</th>
-            <td>돈코츠라멘</td>
-            <td>카라아게 세트</td>
-            <td>일본식 볶음밥 세트</td>
-            <td>일본식 교자 세트</td>
-            <td>차슈돈부리 세트</td>
+            <td class="f1">돈코츠라멘</td>
+            <td class="f2">카라아게 세트</td>
+            <td class="f3">일본식 볶음밥 세트</td>
+            <td class="f4">일본식 교자 세트</td>
+            <td class="f5">차슈돈부리 세트</td>
         </tr>
         <tr>
             <th>가격</th>
-            <td>7,000\</td>
-            <td>9,500\</td>
-            <td>9,000\</td>
-            <td>9,500\</td>
-            <td>9,000\</td>
+            <td class="f1">7,000won</td>
+            <td class="f2">9,500won</td>
+            <td class="f3">9,000won</td>
+            <td class="f4">9,500won</td>
+            <td class="f5">9,000won</td>
         </tr>
-    </table>
-    <h2>3. 식당평가</h2>
+    </table>  <br>
+    <div id="flip">어! 이게 뭐지?</div>
+      <div id="panel">
+        <h2 style="text-align:left">3. 식당평가</h2>
     부탄츄는 일본식 정통라멘을 거부감없이 입문할수있는 음식점입니다. 각종 고명이나 면의 종류를 결정할수있어 음식을 먹는데 재미를
     느낄수있습니다. 하지만 라멘의 무거움과 느끼함을 싫어한다면 먹다가 질릴수있습니다.<br></br>
-    한마디 평가:<strong> 처음 라멘 입문을 할수있는곳</strong>
+    한마디 평가:<strong> 처음 라멘 입문을 할수있는곳</strong></div>
     <h2>4. 평점</h2>
-    <a class="font">★★☆☆☆</a>
+    <a class="font">
+        <div id="animate-demo"class="box">★★☆☆☆</div>
+      </a>
     <div style="position: fixed; bottom: 5px; right: 5px;">
         <a href="#header">
+            <span id="hw">
             <img src="image3.PNG" style="height:30px;" title="위로 가기">
+          </span>
         </a>
     </div>
+    <br><br><br><br><br>
     <p class="text2">
         (주) FOOD PARTNER 대표이사 김현석 서울특별시 강서구 허준로 176 (가양동, 8단지) <br>전화 010-5292-7308
         E-mail : kjuk02@naver.com <br>사업자등록번호 2014-30-50 음식판매업 신고 제2014-국민소형-3050호 사업자정보확인<br>
         copyright (C) <span style="color:sandybrown;;">FP inc.</span> All rights reserved.
     </p>
+  </div>
+    <script type="text/javascript" src="input.js"></script>
 </body>
 </html>

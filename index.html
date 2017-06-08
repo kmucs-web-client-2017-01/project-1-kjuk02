@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>hyeon seok muckbang</title>
     <link rel="stylesheet" href="navigationbar.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -37,31 +38,32 @@
 
     <div class="text">
         <h3>혼밥 많이 하시나요?</h3>
-        사전적으로는 밥은 "마음의 양식"과 같은 은유나 비유에 쓰이기도 한데요.<p></p>
-        왜 그렇게 말할까요? 맛있는 거 먹고 그러면서 상대방하고 얘기하면 행복하잖아요.<p></p>
-        이렇게 힘든 때에 <strong>밥</strong> 한 끼 친구들과 맛있는 음식 먹는 행복만큼 큰 행복은 없다고 생각해요<p></p>
-        근데 요즘 다들 바빠서 자기 밥 챙겨 먹기도 힘들잖아요. <p></p>
-        그리고 막상 누구랑 갈지 뭐 먹을지 번거롭죠? 일상이 바쁜데 언제 일일이 약속 잡고 만나요.<p></p>
-        그래서<h2 style="color:royalblue;">홈페이지를 만들었습니다!</h2>
-        당신이 원하면 언제든지 맛집을 같이 가줄 <strong style="font-size:larger">FOOD PARTNER</strong>가 되어줄 겁니다.<p></p>
-        위에는 그 발자취들이 있습니다. 배고프시면 밑을 봐주세요<p></p>
-
+        <span id="sentence1" hidden='hidden'>사전적으로는 밥은 "마음의 양식"과 같은 은유나 비유에 쓰이기도 한데요.</span><br><br>
+        <span id="sentence2" hidden='hidden'>왜 그렇게 말할까요? 맛있는 거 먹고 그러면서 상대방하고 얘기하면 행복하잖아요.</span><br><br>
+        <span id="sentence3" hidden='hidden'>이렇게 힘든 때에 <strong>밥</strong> 한 끼 친구들과 맛있는 음식 먹는 행복만큼 큰 행복은 없다고 생각해요</span><br><br>
+        <span id="sentence4" hidden='hidden'>근데 요즘 다들 바빠서 자기 밥 챙겨 먹기도 힘들잖아요.</span><br><br>
+        <span id="sentence5" hidden='hidden'>그리고 막상 누구랑 갈지 뭐 먹을지 번거롭죠? 일상이 바쁜데 언제 일일이 약속 잡고 만나요. </span><br><br>
+        <span id="sentence6" hidden='hidden'>그래서</span>
+        <span id="sentence7" hidden='hidden'><h2 style="color:royalblue;">홈페이지를 만들었습니다!</h2></span>
+        <span id="sentence8" hidden='hidden'>당신이 원하면 언제든지 맛집을 같이 가줄 <strong style="font-size:larger">FOOD PARTNER</strong>가 되어줄 겁니다.</span><br><br>
+        <span id="sentence9" hidden='hidden'>위에는 그 발자취들이 있습니다. 배고프시면 밑을 봐주세요</span><br><br>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h3>밥먹을 사람 상시 모집중</h3>
-    <form>
-        <p style="text-align:right">
-            이름 : <input type="text" placeholder="your name">
-            연락처 : <input type="tel" maxlength:13 placeholder="your number">
-            <button type="reset">신청하기</button>
+    <form id="form_">
+        <p style="text-align:left">
+            이름 : <input type="text"></input><span id="hidden1" hidden="hidden">Type your name</span><br>
+            연락처 : <input type="tel" maxlength:13></input><span id="hidden2" hidden="hidden">Type your phone number</span><br>
+            <button id="submit" type="reset">신청하기</button>
             <button type="reset">취소</button>
         </p>
         <br>
     </form>
     <div style="position: fixed; bottom: 5px; right: 5px;">
-        <a href="#header">
+        <span id="hw">
             <img src="image3.PNG" style="height:30px;" title="위로 가기">
-        </a>
+        </span><br>
     </div>
+    <script type="text/javascript" src="input.js"></script>
 </body>
 </html>
