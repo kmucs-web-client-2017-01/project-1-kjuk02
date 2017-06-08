@@ -29,18 +29,17 @@ function hideMenu(){
 document.oncontextmenu = hideMenu;
 //불펌방지
 $('#submit').click(function(){
-  var num = $('#hidden1').val();
-  var num2 = $('#hidden2').val();
+  var num = $('#input_1').val();
+  var num2 = $('#input_2').val();
 
-  if(num!="" && num2!=""){
-    var com = confirm(num+"님!\n"+"입력하신 정보가 정확합니까?");
+  if(num!=" " && num2!=" "){
+    var com = confirm(num+"님! "+"올바르게 입력하셨습니까?");
     if(com==true){
-      alert($('#hidden1').val() + " 님의 신청이 완료되었습니다.");
+      alert(num+  " 님의 신청이 완료되었습니다.");
       document.getElementById("form_").reset()
     }
     else {
-      alert("다시 입력해주세요!")
-
+      alert("다시 입력해주세요!");
     }
   }
   else {
