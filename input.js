@@ -32,7 +32,7 @@ $('#submit').click(function(){
   var num = $('#input_1').val();
   var num2 = $('#input_2').val();
 
-  if(num!=" " && num2!=" "){
+  if(num!="" && num2!=""){
     var com = confirm(num+"님! "+"올바르게 입력하셨습니까?");
     if(com==true){
       alert(num+  " 님의 신청이 완료되었습니다.");
